@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="question.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <a  href="#" id="viewscore" > View Highscores </a>
+      <div class="time">
+        <span>Time :</span>
+        <span id="time">45</span>
+      </div>
+    </header>
+    <!-- main -->
+    <div class="main">
+      <!-- onmousedown='return false;' onselectstart='return false;' if you want to disable from copying -->
+      <div class="quizBox">
+          <!-- Questions -->
+        <div class="container">
+          <h3 id="questions">Questions</h3>
+          <ul>
+            <li class="answer" onclick="Answered('a')" id="a">option1</li>
+            <li class="answer" onclick="Answered('b')" id="b">option2</li>
+            <li class="answer" onclick="Answered('c')" id="c">option3</li>
+            <li class="answer" onclick="Answered('d')" id="d">option4</li>
+          </ul>
+          <div>
+            <p id="result"></p>
+          </div>
+        </div>
+        <!-- final result -->
+        <div class="finalResult">
+          <h3>All done!</h3>
+          <br />
+          <span>Your final score is </span>
+
+          <span id="score"></span><br />
+
+          <label for="input">Enter initials :</label>
+          <input type="text" id="input" /><br />
+          <button type="submit" class="btn" id="submit">Submit</button>
+        </div>
+         <!-- viewscore -->
+         <div class="viewscore" >
+           
+         </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
